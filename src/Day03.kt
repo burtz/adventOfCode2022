@@ -48,8 +48,8 @@ fun main() {
             var bag2 = input.get(i+1).toSet()
             var bag3 = input.get(i+2).toSet()
 
-            var zz = bag1.intersect(bag2.intersect(bag3))
-            listOfBadges += zz
+            var matchingBadges = bag1.intersect(bag2.intersect(bag3))
+            listOfBadges += matchingBadges
         }
         return sumList(listOfBadges)
     }
